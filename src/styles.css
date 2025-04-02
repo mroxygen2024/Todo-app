@@ -1,0 +1,200 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease;
+}
+
+/* Todo Container */
+.todo-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+}
+
+.todo-container.dark {
+  background-color: #121212;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Todo Form */
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-form input,
+.todo-form select,
+.todo-form button {
+  background-color: #f5f5f5;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 350px;
+}
+
+.todo-form button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+}
+
+.todo-form button:hover {
+  background-color: #45a049;
+}
+
+/* Dark Mode Toggle at the top-right corner */
+.toggle-mode {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ccc;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-mode span {
+  margin-right: 8px;
+}
+
+.toggle-mode:hover {
+  background-color: #ddd;
+}
+
+.todo-container.dark .toggle-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Filters and Sort Buttons */
+.filters,
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.filters button,
+.sort-buttons button {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  color: #000;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.filters button:hover,
+.sort-buttons button:hover {
+  background-color: #ddd;
+}
+
+/* Todo List */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Todo Item */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+/* Buttons for each Todo Item */
+button {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  color: #000;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.todo-container.dark .todo-item {
+  background-color: #222;
+  border: 1px solid #444;
+}
+
+.todo-container.dark .todo-item.completed {
+  background-color: #444;
+  color: #aaa;
+}
+
+/* Position and layout improvements for buttons */
+.todo-item button {
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.todo-item button:hover {
+  transform: scale(1.1);
+}
+
+.todo-item button:active {
+  transform: scale(0.95);
+}
+
+/* Completed Section */
+.completed-section {
+  display: none;
+  margin-top: 20px;
+}
+
+.completed-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.todo-container .completed-section.active {
+  display: block;
+}
