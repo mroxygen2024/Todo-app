@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,7 +8,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Todo Container */
+
 .todo-container {
   width: 100%;
   max-width: 800px;
@@ -32,7 +32,6 @@ h1 {
   font-size: 2rem;
 }
 
-/* Todo Form */
 .todo-form {
   display: flex;
   flex-direction: column;
@@ -65,7 +64,7 @@ h1 {
   background-color: #45a049;
 }
 
-/* Dark Mode Toggle at the top-right corner */
+
 .toggle-mode {
   position: absolute;
   top: 20px;
@@ -91,7 +90,6 @@ h1 {
   color: #fff;
 }
 
-/* Filters and Sort Buttons */
 .filters,
 .sort-buttons {
   display: flex;
@@ -115,7 +113,7 @@ h1 {
   background-color: #ddd;
 }
 
-/* Todo List */
+
 .todo-list {
   list-style-type: none;
   padding: 0;
@@ -123,7 +121,6 @@ h1 {
   width: 100%;
 }
 
-/* Todo Item */
 .todo-item {
   display: flex;
   justify-content: space-between;
@@ -144,7 +141,7 @@ h1 {
   word-wrap: break-word;
 }
 
-/* Buttons for each Todo Item */
+
 button {
   background-color: #f5f5f5;
   border: 1px solid #ccc;
@@ -170,7 +167,7 @@ button:hover {
   color: #aaa;
 }
 
-/* Position and layout improvements for buttons */
+
 .todo-item button {
   margin-left: 8px;
   transition: transform 0.2s ease;
@@ -184,7 +181,7 @@ button:hover {
   transform: scale(0.95);
 }
 
-/* Completed Section */
+
 .completed-section {
   display: none;
   margin-top: 20px;
